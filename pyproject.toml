@@ -1,0 +1,31 @@
+[project]
+name = "smart-queue"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "vova",email = "mataev.vladimir.a@gmail.com"}
+]
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.11"
+torch = {version = "^2.6.0+cu118", source = "pytorch"}
+torchvision = {version = "^0.21.0+cu118", source = "pytorch"}
+ultralytics = "^8.3.203"
+scikit-learn = "^1.7.2"
+matplotlib = "^3.10.6"
+supervision = "^0.26.1"
+jupyter = "^1.1.1"
+seaborn = "^0.13.2"
+scikit-fuzzy = "^0.5.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
