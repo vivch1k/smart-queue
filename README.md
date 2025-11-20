@@ -2,4 +2,5 @@ The project was created to automate the management of checkout areas at retail o
 
 
 Example of the system operation
-![Demo](assets/example_video_10s.gif)
+
+![Demo](src/assets/media/demo.gif)
